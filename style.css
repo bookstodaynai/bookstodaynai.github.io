@@ -2,12 +2,21 @@
     margin: 0px;
     padding: 0px;
 }
+#grad{
+    background: rgb(183,190,201);
+    background: linear-gradient(90deg, rgba(183,190,201,1) 0%, rgba(186,186,207,1) 50%, rgba(195,179,201,1) 100%); 
+}
 header{
     display: flex;
     width: 90%;
     margin: auto;
     height: auto;
     align-items: center;
+    font-family: 'Miltonian', cursive;
+}
+body{
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F29625310019842733%2F&psig=AOvVaw1rleWIbByHkoqedOnJeMbR&ust=1598389915976000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKCNo-mItesCFQAAAAAdAAAAABAD);
+    background-size: cover;
 }
 .logo-container, .cart, .nav-links{
     display: flex;
@@ -18,7 +27,7 @@ header{
 .logo{
     padding: 10px 0px 0px 0px;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 40px;
     margin: 5px;
 }
 nav{
@@ -62,18 +71,16 @@ img{
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0px 8px 8px 8px;
-    }
+    }    
     .Title{
         grid-column-end: span 3;
         justify-self: center;
         font-size: 16px;
     }
     .logo{
-        padding: 10px 0px 0px 0px;
-        font-weight: 200;
-        font-size: 16px;
-        margin: 5px;
+        padding: 8px 0px 0px 0px;
+        font-weight: 400;
+        font-size: 40px;
     }
     .nav-link{
         font-weight: #5f5f79;
