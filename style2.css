@@ -1,17 +1,24 @@
-* {
+*{
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
+  text-align: center;
 }
-body {
-  font-family: 'Kaushan Script', cursive;
-}
-header {
+header{
   display: flex;
   width: 90%;
   margin: auto;
-  height: 10vh;
+  height: auto;
   align-items: center;
+}
+html, body{
+  height: 100%;
+}
+#container{
+  min-height: 100%;
+}
+#main{
+  overflow: auto;
+  padding-bottom: 100px;
 }
 .logo-container, .cart, .nav-links{
   display: flex;
@@ -20,7 +27,7 @@ header {
   flex: 1;
 }
 .logo{
-  padding: 10px, 0px, 0px, 0px;
+  padding: 10px 0px 0px 0px;
   font-weight: 400;
   font-size: 32px;
   margin: 5px;
@@ -37,31 +44,81 @@ nav{
   font-size: 24px;
   text-decoration: none;
 }
-.cart{
+.search{
   flex: 1;
   justify-content: flex-end;
 }
-ul {
-  font-size: 0;
-  list-style: none;
+img{
+  width: 80px;
+  height: auto;
 }
-ul li {
-  display: flex;
-  flex: auto;
-  padding: 16px;
+.grid{
+  display: grid;
+}
+.button{
+  border-radius: 8px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-  justify-content: space-around;
-  width: 16%;
+  font-size: 24px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 80%;
 }
-ul li:hover {
-  background: #cdc8c8;
+
+.button1{
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
 }
-ul li img {
-  opacity: 0.8;
-  width: 90%;
+.button1:hover{
+  background-color: #4CAF50;
+  color: white;
 }
-@media (max-width: 1024px) {
-  ul li {
-    width: 33.3%;
+#footer{
+  background-color: #000;
+  height: 80px;
+  position: relative;
+  margin-top: -80px;
+  width: 100%;
+}
+#botom{
+  color: beige;
+}
+@media screen and (max-width: 1024px){
+  img{
+      width: 56px;
+      height: auto;
+  }
+  .icon{
+      width: 80px;
+      height: auto;
+  }
+  .grid{
+      display: grid;
+  }
+  p{
+      font-weight: 560;
+      font-size: 18px;
+  }
+  .logo{ 
+      padding-top: 10px;
+      font-weight: 200;
+      font-size: 24px;
+      margin: 5px;
+  }
+  .nav-link{
+      font-weight: #5f5f79;
+      font-size: 24px;
+      text-decoration: none;
+  }
+  .logo-container, .cart, .nav-links{
+      display: flex;
+  }
+  .logo-container{
+      flex: 1;
   }
 }
